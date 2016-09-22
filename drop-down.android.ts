@@ -38,7 +38,7 @@ export class DropDown extends common.DropDown {
     public _realizedItems = [{}, {}];
 
     public _createUI() {
-        this._android = new android.widget.Spinner(this._context);
+        this._android = new android.widget.Spinner(this._context, 0);
 
         if (!this._androidViewId) {
             this._androidViewId = android.view.View.generateViewId();

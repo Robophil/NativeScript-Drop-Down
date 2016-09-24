@@ -1,13 +1,12 @@
 {
     "compilerOptions": {
-        "noEmitOnError": true,
-        "noEmitHelpers": true,
-        "noLib": false,
-        "sourceMap": false,
+         "module": "commonjs",
         "target": "es5",
-        "module": "commonjs",
-        "outDir": "bin/dist",
-        "rootDir": "./"
+        "sourceMap": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "noEmitHelpers": false,
+        "noEmitOnError": false
     }, 
     "exclude": [
         "node_modules", 

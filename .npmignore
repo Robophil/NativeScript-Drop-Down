@@ -1,0 +1,7 @@
+demo/
+.vscode/
+*.png
+*.log
+*.map
+*.ts
+!*.d.ts

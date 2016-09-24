@@ -101,14 +101,7 @@ export abstract class DropDown extends View implements definition.DropDown {
     public abstract _onHintPropertyChanged(data: PropertyChangeData);
 
     public _onSelectedIndexPropertyChanged(data: PropertyChangeData) {
-        let index = this.selectedIndex;
-
-        if (types.isUndefined(index)) {
-            return;
-        }
-
-        if (index < 0 || index >= this.items.length) {
-            this.selectedIndex = undefined;
+        if (!data.newValue) {
             throw new Error("selectedIndex should be between [0, items.length - 1]");
         }
     }
